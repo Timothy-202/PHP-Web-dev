@@ -16,7 +16,7 @@ $query = "SELECT * FROM registration";
 $result = mysqli_query($dbconnect,$query);
 while($data = mysqli_fetch_assoc($result)){
     echo "This is your firstname". $data['firstName']. 
-    '<a href = "update.php?id ='. $data['id'] . '"
+    '<a href = "updatingForm.php?id='. $data['id'] . '"
     class = "btn btn-sm btn-primary">Edit</a>';
 }
 
