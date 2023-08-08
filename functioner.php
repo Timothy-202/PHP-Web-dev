@@ -1,0 +1,14 @@
+ <?php
+ function calculateSumFromUserInput(){
+$count = readline("Enter the number of values:");
+    $numbers = array();
+    for ($i = 0; $i < $count; $i++){
+        $value = readline("Enter value #". ($i + 1). ":");
+    $numbers[] = (int) $value;
+
+    }
+    $sum = array_sum($numbers);
+    echo "Sum of the entered values:". $sum;
+ }
+ calculateSumFromUserInput();
+ ?>
